@@ -1,0 +1,69 @@
+h1 {
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.launches-container {
+    background-image: url("../../assets/images/spaceXLaunces.jpeg");
+    background-position: center center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+}
+
+.launches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 400px;
+    max-width: 100%;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0062cc;
+}
+
+@media only screen and (max-width: 768px) {
+    .launches {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
